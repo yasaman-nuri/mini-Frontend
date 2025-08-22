@@ -4,6 +4,29 @@
 # Node.js dependencies
 node_modules/
 
+# Build output
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+
+# Environment files
+.env
+.env.*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs
+*.log# macOS
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
 # Optional build folders
 dist/
 build/
