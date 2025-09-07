@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+a {
+  background-color: var(--color--nav-link-background);
+  color: var(--color--body-foreground);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 1 15rem;
+}
+a:hover {
+  background-color: var(--color--nav-link-background--hover);
+}
+
+img {
+  flex-shrink: 0; /* آیکون کوچک نشه */
+}
+
+p {
+  color: var(--color--body-foreground);
+}

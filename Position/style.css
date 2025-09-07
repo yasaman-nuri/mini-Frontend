@@ -1,0 +1,149 @@
+h1 {
+  text-align: center;
+}
+
+.building {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .building {
+    flex-direction: column;
+  }
+  #contest-area {
+    order: 1;
+  }
+  #seats-area {
+    order: 2;
+  }
+}
+
+.seats {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.persons {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  row-gap: 60px;
+  column-gap: 10px;
+}
+
+.seat {
+  width: 60px;
+  height: 60px;
+  background-color: lightgreen;
+  border: 2px solid #333;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filled {
+  background-color: gray;
+}
+
+.person {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: green;
+  border-radius: 100%;
+  border: 2px solid #000;
+}
+
+.js-person {
+  opacity: 1;
+  background-color: orange;
+}
+
+.python-person {
+  opacity: 1;
+  background-color: dodgerblue;
+}
+
+.contest-container {
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(30px, 90px));
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.item {
+  font-size: 12px;
+  padding: 4px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+
+.js {
+  background-color: orange;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.python {
+  background-color: dodgerblue;
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+}
+
+.stage {
+  background-color: gray;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.laravel {
+  background-color: coral;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+.rest {
+  background-color: pink;
+  grid-column: 4 / 6;
+  grid-row: 2 / 3;
+}
+
+.staffs {
+  background-color: teal;
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+}
+
+.data {
+  background-color: lightblue;
+  grid-column: 5 / 6;
+  grid-row: 3 / 5;
+}
+
+.extra {
+  background-color: purple;
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+}

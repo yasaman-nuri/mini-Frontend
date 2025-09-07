@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll; /* فقط اسکرول عمودی */
+  overflow-x: hidden; /* جلوگیری از اسکرول افقی */
+  scroll-snap-type: y mandatory; /* اسنپ عمودی و اجباری */
+  scroll-behavior: smooth;   /* حرکت نرم بین سکشن‌ها */
+
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  scroll-snap-align: start; /* هر سکشن از بالا شروع بشه */
+}
+
+.dot:hover {
+  background: black;
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* حذف اسکرول‌بار کروم */
+}
+
+/* write your code here */
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: gray;
+  border-radius: 50%;
+  display: block;
+}
+
+.dot-navigation {
+  position: fixed;
+  top: 50%; /* وسط صفحه */
+  right: 20px; /* فاصله از راست */
+  transform: translateY(-50%); /* دقیقاً وسط چین شدن عمودی */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* فاصله بین دات‌ها */
+}
